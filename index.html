@@ -1,71 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Spread The Word | Christian Apparel</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f8f8f8;
+      color: #222;
+      line-height: 1.6;
       text-align: center;
-      color: #333;
     }
+
     header {
-      background: #000;
-      color: white;
-      padding: 60px 20px;
+      background: linear-gradient(135deg, #111, #333);
+      color: #fff;
+      padding: 80px 20px;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2.8em;
+      letter-spacing: 2px;
     }
-    .content {
-      padding: 40px 20px;
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      opacity: 0.9;
     }
-    a.button {
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .button {
       display: inline-block;
       margin: 15px;
-      padding: 15px 30px;
+      padding: 15px 35px;
       background: #000;
       color: #fff;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 6px;
       font-size: 1.1em;
+      transition: background 0.3s;
     }
-    a.button:hover {
+
+    .button:hover {
       background: #444;
     }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .product {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
     footer {
       background: #eee;
-      padding: 20px;
+      padding: 30px 20px;
       font-size: 0.9em;
       margin-top: 60px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2em;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Spread The Word</h1>
-  <p>Faith-Based Christian Apparel</p>
-</header>
+  <header>
+    <h1>Spread The Word</h1>
+    <p>Christian Apparel That Shares the Gospel</p>
+    <a class="button" href="https://spreadthewordbystw.etsy.com" target="_blank">
+      Shop on Etsy
+    </a>
+  </header>
 
-<div class="content">
-  <h2>Wear Your Faith</h2>
-  <p>Sharing the Gospel through meaningful apparel.</p>
+  <section>
+    <h2>Our Mission</h2>
+    <p>
+      We exist to spread the Word of God through faith-inspired apparel.
+      Every design is created to glorify Christ, spark conversation,
+      and boldly share the Gospel wherever you go.
+    </p>
+  </section>
 
-  <a class="button" href="https://spreadthewordbystw.etsy.com" target="_blank">
-    Shop on Etsy
-  </a>
-</div>
+  <section style="background:#fff;">
+    <h2>Scripture Inspiration</h2>
+    <p>
+      “Go therefore and make disciples of all nations.”
+      <br><strong>— Matthew 28:19</strong>
+    </p>
+  </section>
 
-<footer>
-  © 2025 Spread The Word
-</footer>
+  <section>
+    <h2>Featured Apparel</h2>
+
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/300x300?text=Christian+Tee" alt="Christian T-Shirt">
+        <h3>Faith-Based Tee</h3>
+        <a class="button" href="https://spreadthewordbystw.etsy.com" target="_blank">
+          Buy on Etsy
+        </a>
+      </div>
+
+      <div class="product">
+        <img src="https://via.placeholder.com/300x300?text=Christian+Hoodie" alt="Christian Hoodie">
+        <h3>Christian Hoodie</h3>
+        <a class="button" href="https://spreadthewordbystw.etsy.com" target="_blank">
+          Buy on Etsy
+        </a>
+      </div>
+
+      <div class="product">
+        <img src="https://via.placeholder.com/300x300?text=Faith+Wear" alt="Faith Apparel">
+        <h3>Faith Wear</h3>
+        <a class="button" href="https://spreadthewordbystw.etsy.com" target="_blank">
+          Buy on Etsy
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Spread The Word • Faith-Based Christian Apparel<br>
+    <a href="https://spreadthewordbystw.etsy.com" target="_blank">Visit our Etsy Shop</a>
+  </footer>
 
 </body>
 </html>
